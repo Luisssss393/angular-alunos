@@ -1,13 +1,17 @@
-<div>
-    <img src="" alt="">
-    <h3>Luis Gustavo Demetrio</h3>
+<div class="card">
+    <img src={{aluno.imagem}} alt="">
+    <h3>{{ aluno.nome }}</h3>
     <p>
-        <strong>Curso:</strong> Angular
+        <strong>Curso:</strong> {{aluno.curso}}
     </p>
     <p>
-        <strong>Matrícula:</strong> 7799
+        <strong>Matrícula:</strong> {{aluno.matricula}}
     </p>
     <p>
-        <strong>Email:</strong> guilherme.com.br
+        <strong>Email:</strong> {{aluno.email}}
     </p>
+    <p>
+        <strong>Status Cadastro:</strong> {{aluno.cadastro ? "ativo" : "inativo"}}
+    </p>
+    
 </div>
